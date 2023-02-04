@@ -1,0 +1,28 @@
+html {
+  font-size: max(1em, 5vmax);
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+}
+
+figure {
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin: auto;
+  min-height: 100vh;
+}
+
+@media (orientation: landscape) {
+  figure {
+    transform: rotate(-90deg);
+  }
+}
+
+li:not(:focus-within) {
+  list-style-type: circle;
+}

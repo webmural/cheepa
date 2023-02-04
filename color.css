@@ -1,0 +1,29 @@
+::selection {
+  background: gold;
+  color: indigo;
+}
+
+:root {
+  color: #33113d;
+  background: deepskyblue;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: #33113d;
+    color: deepskyblue;
+  }
+}
+
+:any-link {
+  transition: 120ms;
+  color: inherit;
+}
+
+:not(:hover) {
+  text-decoration-style: dotted;
+}
+
+:focus {
+  outline: thick dotted;
+}
